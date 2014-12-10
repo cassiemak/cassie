@@ -10,8 +10,27 @@
 .footer {
   /*background-color: rgba(255, 153, 0, 0.8);*/
   background: transparent;
-  padding: 10px 10px 30px 5px;
+  padding: 20px 10px 30px 5px;
   font: white;
   font-family: 'Frijole', cursive;
 
+}
+
+.contactinfo {
+  list-style-type: none;
+}
+
+.info {
+  display: inline-block;
+  padding: 4px;
+}
+
+.phone {
+  font-size: 16px;
+  display: inline-block;
+  font-family: 'Frijole', cursive;
+}
+
+i {
+  padding-right: 3px;
 }
