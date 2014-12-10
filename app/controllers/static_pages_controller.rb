@@ -4,6 +4,10 @@ class StaticPagesController < ApplicationController
     # so we are just going to render the page 'index.html'
   end
 
+  def home
+    
+  end
+
   def mathgame
 
   end

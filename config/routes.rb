@@ -3,8 +3,9 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'static_pages#index'
+  root 'static_pages#home'
   # a path 'controller#method'
+  get '/home' => 'static_pages#home'
 
   get '/mathgame' => 'static_pages#mathgame'
 
@@ -24,7 +25,7 @@ Rails.application.routes.draw do
   #     member do
   #       get 'short'
   #       post 'toggle'
-  #     end
+  #     end`
   #
   #     collection do
   #       get 'sold'
