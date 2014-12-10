@@ -8,11 +8,24 @@ class StaticPagesController < ApplicationController
     
   end
 
+  def aboutme
+    
+  end
+
+  def portfolio
+    
+  end
+  
+  def gallery
+    
+  end
+
+  def contact
+    
+  end
+
   def mathgame
 
   end
 
-  def cassie
-
-  end
 end

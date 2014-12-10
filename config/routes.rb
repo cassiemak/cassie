@@ -7,9 +7,16 @@ Rails.application.routes.draw do
   # a path 'controller#method'
   get '/home' => 'static_pages#home'
 
+  get '/aboutme' => 'static_pages#aboutme'
+
+  get '/portfolio' => 'static_pages#portfolio'
+
+  get '/gallery' => 'static_pages#gallery'
+
+  get '/contact' => 'static_pages#contact'
+
   get '/mathgame' => 'static_pages#mathgame'
 
-  get '/cassie' => 'static_pages#cassie'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
