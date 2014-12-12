@@ -30,6 +30,12 @@
   text-decoration: none;
 }
 
+list:link {
+color: rgba(255, 153, 0, 0.8);
+// border-bottom: 1px solid #0000FF;
+border-bottom: none;
+}
+
 /*font-family: 'Alex Brush', cursive;
 font-family: 'Frijole', cursive;
 font-family: 'Rock Salt', cursive;

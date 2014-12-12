@@ -18,6 +18,7 @@
 
 .contactinfo {
   list-style-type: none;
+  text-align: right;
 }
 
 .info {
@@ -29,8 +30,30 @@
   font-size: 16px;
   display: inline-block;
   font-family: 'Frijole', cursive;
+  color: rgba(255, 153, 0, 0.8);
 }
+
 
 i {
   padding-right: 3px;
+}
+
+.footline {
+  // display: inline-block;
+  color: rgba(255, 153, 0, 0.8);
+}
+
+a {
+text-decoration: none;
+}
+a:link {
+color: rgba(255, 153, 0, 0.8);
+// border-bottom: 1px solid #0000FF;
+border-bottom: none;
+}
+
+i:link {
+color: rgba(255, 153, 0, 0.8);
+// border-bottom: 1px solid #0000FF;
+border-bottom: none;
 }
