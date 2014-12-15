@@ -17,6 +17,8 @@ Rails.application.routes.draw do
 
   get '/mathgame' => 'static_pages#mathgame'
 
+  get '/travel' => 'static_pages#travel'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
