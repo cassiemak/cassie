@@ -2,7 +2,6 @@
 'use strict';
 
 // Global variables
-
-$(document).ready(function(){
-  ("<%= asset_path('AuroaIceland.jpg') %>")
-});
+// $(document).ready(function(){
+//   ("<%= asset_path('AuroaIceland.jpg') %>")
+// });
