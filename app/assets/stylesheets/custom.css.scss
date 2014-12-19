@@ -45,6 +45,11 @@ p {
   background-size: cover;
 }
 
+img.project{
+  width: 200px;
+  height: 200px;
+}
+
 // Gallery Page
 .gallery{
   background-image: image-url('background2.jpg');
@@ -55,12 +60,14 @@ p {
 #map-canvas {
   // width: 500px;
   // height: 700px;
-  width: 1440px;
+  width: 100%;
   min-height: 800px;
   overflow: hidden;
   transform: translateZ(0px);
   top: 2.06473214285714px;
   background-color: rgb(229, 227, 223);
+  position: absolute;
+  z-index: 0;
 }
 
 #myHome {
@@ -76,7 +83,8 @@ p {
 }
 
 .contact {
-  position: absolute;
+  position: relative;
+  z-index: 1;
   top: 0;
   width: 100%;
   height: 100%;

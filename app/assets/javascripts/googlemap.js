@@ -6,7 +6,9 @@ $(document).ready(function() {
  //  };
  //  var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
       var initialize = function(){
+        
         var mapCanvas = document.getElementById('map-canvas');
+        
         var mapOptions = {
           center: new google.maps.LatLng(22.2670, 114.1880),
           zoom: 5,
@@ -14,5 +16,6 @@ $(document).ready(function() {
         }
         var map = new google.maps.Map(mapCanvas, mapOptions)
       }
-      google.maps.event.addDomListener(window, 'load', initialize);
+      
+      oogle.maps.event.addDomListener(window, 'load', initialize);
 });

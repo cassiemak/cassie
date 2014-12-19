@@ -2,18 +2,36 @@
   <%= render 'layouts/header' %>
   <div class="row vertical-center">
     <div class="col-sm-8 col-sm-offset-2 text-center">
+
       <div class="col-sm-3">
-        <a class="project" href="http://sassy-simple-shopping-cart.bitballoon.com" value=""><img src="jquerySimpleShoppingCart.png"></a>
+<!--         <a class="project" href="http://sassy-simple-shopping-cart.bitballoon.com" value=""><img src="jquerySimpleShoppingCart.png"></a> -->
+        <%= link_to "http://sassy-simple-shopping-cart.bitballoon.com" do %>
+          <%= image_tag "jquerySimpleShoppingCart.png", :class => "project" %>
+        <% end %>
       </div>
+      
       <div class="col-sm-3">
-        <a class="project" href="http://sassy-math.bitballoon.com" value=""><img src="javascriptAjax10SecOfMathGame.png"></a>
+<!--         <a class="project" href="http://sassy-math.bitballoon.com" value=""><img src="assets/javascriptAjax10SecOfMathGame.png"></a> -->
+        <%= link_to "http://sassy-math.bitballoon.com" do %>
+          <%= image_tag "javascriptAjax10SecOfMathGame.png", :class => "project" %>
+        <% end %>
       </div>
+
       <div class="col-sm-3">
-        <a class="project" href="http://sassy-simple-shopping-cart.bitballoon.com" value=""><img src="jquerySimpleShoppingCart.png"></a>
+<!--         <a class="project" href="http://sassy-simple-shopping-cart.bitballoon.com" value=""><img src="assets/jquerySimpleShoppingCart.png"></a> -->
+        <%= link_to "http://sassy-math.bitballoon.com" do %>
+          <%= image_tag "javascriptAjax10SecOfMathGame.png", :class => "project" %>
+           <% end %>
       </div>
+      
       <div class="col-sm-3">
-        <a class="project" href="http://sassy-simple-shopping-cart.bitballoon.com" value=""><img src="jquerySimpleShoppingCart.png"></a>
+<!--         <a class="project" href="http://sassy-simple-shopping-cart.bitballoon.com" value=""><img src="assets/jquerySimpleShoppingCart.png"></a> -->
+        <%= link_to "http://sassy-math.bitballoon.com" do %>
+          <%= image_tag "javascriptAjax10SecOfMathGame.png", :class => "project" %>
+           <% end %>
+
       </div>
+    
     </div>
   </div>
   <%= render 'layouts/footer' %>
