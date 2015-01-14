@@ -5,6 +5,13 @@
 .icon {
   display: inline-block;
   padding: 4px;
+  
+}
+
+.iconicon{
+  &:hover{
+    color: orange;
+  }
 }
 
 .footer {
@@ -13,17 +20,25 @@
   padding: 20px 10px 30px 5px;
   font: white;
   font-family: 'Frijole', cursive;
-
 }
 
 .contactinfo {
   list-style-type: none;
   text-align: right;
+
 }
 
 .info {
   display: inline-block;
   padding: 4px;
+
+}
+
+.emailaddress{
+  &:hover{
+    text-decoration: none;
+    color: orange;
+  }
 }
 
 .phone {
@@ -31,6 +46,9 @@
   display: inline-block;
   font-family: 'Frijole', cursive;
   color: rgba(255, 153, 0, 0.8);
+  &:hover{
+    text-decoration: none;
+  }
 }
 
 

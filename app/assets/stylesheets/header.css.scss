@@ -21,13 +21,16 @@
   padding-right: 10px;
 }
 
+.menuList{
+  &:hover{
+    text-decoration: none;
+    color: orange;
+  }
+}
+
 .list{
   display: inline-block;
   padding: 4px;
-}
-
-.list::hover {
-  text-decoration: none;
 }
 
 list:link {
@@ -50,10 +53,6 @@ menu{
   background-color:#333;
 }
 
-// header{
-//   width:100%;
-// }
-  
   nav{
     width:530px;
     margin:80px auto;
