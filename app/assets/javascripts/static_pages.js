@@ -3,5 +3,6 @@
 
 // Global variables
 // $(document).ready(function(){
-//   ("<%= asset_path('AuroaIceland.jpg') %>")
+//   // ("<%= asset_path('AuroaIceland.jpg') %>")
+//   .emulateTransitionEnd(20000);
 // });
