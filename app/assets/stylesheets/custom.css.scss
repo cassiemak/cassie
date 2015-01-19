@@ -161,7 +161,9 @@ div.inner{
 .picture-grid{
 
 }
-
+.gallery-pix{
+border-radius: 25px;
+}
 // changing the speed of the carousel?
 // .carousel-inner < .item {
 //     position: relative;
@@ -202,6 +204,12 @@ div.inner{
   top: 0;
   width: 100%;
   height: 100%;
+  background-image: image-url('background2.jpg');
+  background-size: cover;
+}
+
+#contact-message-box{
+  width: 161px;
 }
 
 #myHome {

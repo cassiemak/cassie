@@ -3,13 +3,28 @@
 <div class="container-fluid contact"> 
   <%= render 'layouts/header' %>
   <div class="row vertical-center">
-    <div class="col-sm-8 col-sm-offset-2 text-center">
+    <div class="col-sm-8 col-sm-offset-2">
       <!-- Call me maybe -->
-      <div>
-        <%= form_for %>
-
-        <% end %>
-
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <%= form_for :person do |f| %>
+            <table>
+              <tr><h3>Leave me a message!</h3></tr>
+              <tr>
+                <td><h5>Name: </h5></td><td><%= f.text_field :name%><br/></td>
+              </tr>
+              <tr>
+                <td><h5>Email Address: </h5></td><td><%= f.text_field :email %><br/></td>
+              </tr>
+              <tr>
+                <td><h5>Message: </h5></td><td><%= f.text_area :message, :id => 'contact-message-box' %><br/></td>
+              </tr>
+              <tr>
+                <td><%= f.submit :class => "btn btn-sm btn-primary", :value => 'SUBMIT' %></td>
+              </tr>
+            </table>
+          <% end %>
+        </div>
       </div>
       <div id="myHome">
         
