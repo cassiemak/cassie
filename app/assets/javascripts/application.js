@@ -17,8 +17,10 @@
 //= require angular-resource
 //= require angular-route
 //= require angular-ui-bootstrap-tpls
+//= require angular-google-maps
 //= require bootstrap
 //= require bootstrap-sprockets
 //= require_tree .
 //= require_tree ./angular
 
+ 

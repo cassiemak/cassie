@@ -1,0 +1,9 @@
+{
+  "name": "cassie",
+  "version": "",
+  "main": "",
+  "private": true,
+  "dependencies": {
+    "angular-google-maps": "2.0.12"
+  }
+}

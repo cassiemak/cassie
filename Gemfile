@@ -56,3 +56,6 @@ gem 'underscore-rails'
 # bower
 gem 'bower'
 gem 'rails_12factor'
+
+# to hide api key
+gem 'dotenv-rails', :groups => [:development, :test]
