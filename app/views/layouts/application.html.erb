@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="cassie">
   <head>
     <title>Cassie Mak</title>
     <!-- css? -->
@@ -17,8 +17,8 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
   </head>
 
-  <body class="body-background">
+  <body ng-view>
+    <h1>Cassie here</h1>
     <%= yield %>
-    <!-- <%= render 'layouts/footer' %> -->
   </body>
 </html>

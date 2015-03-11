@@ -1,0 +1,9 @@
+var app = angular.module("cassie", ['ngRoute']);
+
+app.config(['$routeProvider',function($routeProvider) {
+  $routeProvider.when('/', {
+    templateUrl: "<%= asset_path('cass.html.erb') %>",
+    controller: 'HomeCtrl'
+  })
+
+}]);
