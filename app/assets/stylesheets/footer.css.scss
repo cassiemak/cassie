@@ -1,3 +1,13 @@
+@import "color";
+
+#footer {
+  background-color: $secondary-background-color;
+  padding: 20px 10px 30px 5px;
+  font: white;
+  font-family: 'Frijole', cursive;
+  min-height: 200px;
+}
+
 .social {
   list-style-type: none;
 }
@@ -10,68 +20,52 @@
 
 .iconicon{
   &:hover{
+    // why doesn't this work with $primary color
     color: orange;
   }
 }
 
-.footer {
-  /*background-color: rgba(255, 153, 0, 0.8);*/
-  background: transparent;
-  padding: 20px 10px 30px 5px;
-  font: white;
-  font-family: 'Frijole', cursive;
+
+.footline {
+  display: block;
+  margin: auto;
+  color: $primary-font-color;
 }
 
 .contactinfo {
   list-style-type: none;
   text-align: right;
-
 }
 
 .info {
   display: inline-block;
   padding: 4px;
-
 }
 
-.emailaddress{
-  &:hover{
-    text-decoration: none;
-    color: orange;
-  }
-}
-
-.phone {
+.email {
   font-size: 16px;
   display: inline-block;
   font-family: 'Frijole', cursive;
-  color: rgba(255, 153, 0, 0.8);
+  color: $primary-font-color;
   &:hover{
-    text-decoration: none;
+    // text-decoration: none;
   }
 }
-
 
 i {
   padding-right: 3px;
 }
 
-.footline {
-  // display: inline-block;
-  color: rgba(255, 153, 0, 0.8);
+a {
+  text-decoration: none;
 }
 
-a {
-text-decoration: none;
-}
 a:link {
-color: rgba(255, 153, 0, 0.8);
-// border-bottom: 1px solid #0000FF;
-border-bottom: none;
+  color: $primary-font-color;
+  border-bottom: none;
 }
 
 i:link {
-color: rgba(255, 153, 0, 0.8);
-// border-bottom: 1px solid #0000FF;
-border-bottom: none;
+  color: $primary-font-color;
+  border-bottom: none;
 }
