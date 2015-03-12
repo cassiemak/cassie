@@ -20,5 +20,8 @@
 //= require angular-google-maps
 //= require bootstrap
 //= require bootstrap-sprockets
+//= require underscore
+//= require lodash
+//= require jquery-ui
 //= require_tree .
 //= require_tree ./angular

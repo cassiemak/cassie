@@ -50,6 +50,9 @@ gem 'jquery-ui-rails'
 gem 'angularjs-rails'
 gem 'font-awesome-sass'
 
+# gmaps4rails
+gem 'gmaps4rails'
+
 # underscore
 gem 'underscore-rails'
 

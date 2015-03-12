@@ -1,4 +1,4 @@
-var app = angular.module("cassie", ['ngRoute', 'uiGmapgoogle-maps']);
+var app = angular.module("cassie", ['ngRoute', 'ui.bootstrap', 'uiGmapgoogle-maps']);
 
 app.config(['$routeProvider', 'uiGmapGoogleMapApiProvider',  function($routeProvider, uiGmapGoogleMapApiProvider){
   $routeProvider
@@ -10,6 +10,12 @@ app.config(['$routeProvider', 'uiGmapGoogleMapApiProvider',  function($routeProv
       templateUrl: "<%= asset_path('gallery.html.erb') %>",
       controller: 'GalleryCtrl'
     })
+
+    .when('/test', {
+      templateUrl: "<%= asset_path('test.html') %>",
+      controller: 'HomeCtrl'
+    })
+
     .otherwise({redirectTo: '/'});
 
   uiGmapGoogleMapApiProvider.configure({

@@ -1,4 +1,75 @@
-app.controller('HomeCtrl', ['$scope', function($scope){
+app.controller('HomeCtrl', ['$scope','uiGmapGoogleMapApi', function($scope, uiGmapGoogleMapApi){
 
   console.log("home controller running");
+
+  var homeMap = {
+    center: { 
+      latitude: 22.269883,
+      longitude: 114.1840173
+    },
+    zoom: 13,
+  };
+
+  var mapStyle = [{
+    "featureType":"administrative",
+    "elementType":"labels.text.fill",
+    "stylers":[{
+      "color":"#444444"}]
+  },{
+    "featureType":"landscape",
+    "elementType":"all",
+    "stylers":[{
+      "color":"#f2f2f2"}]
+  },{
+    "featureType":"poi",
+    "elementType":"all",
+    "stylers":[{
+      "visibility":"off"}]
+  },{
+    "featureType":"road",
+    "elementType":"all",
+    "stylers":[{
+      "saturation":-100},{
+      "lightness":45}]
+  },{
+    "featureType":"road.highway",
+    "elementType":"all",
+    "stylers":[{
+      "visibility":"simplified"}]
+  },{
+    "featureType":"road.arterial",
+    "elementType":"labels.icon",
+    "stylers":[{
+      "visibility":"off"}]
+  },{
+    "featureType":"transit",
+    "elementType":"all",
+    "stylers":[{
+      "visibility":"off"}]
+  },{
+    "featureType":"water",
+    "elementType":"all",
+    "stylers":[{
+      "color":"#c0e4f3"},{
+      "visibility":"on"}]
+  }];
+
+  $scope.map = homeMap;
+  $scope.options = {
+    scrollwheel: false,
+    styles: mapStyle,
+    panControl:false,
+    zoomControl:true,
+    zoomControlOptions: {
+        style: google.maps.ZoomControlStyle.SMALL,
+        position: google.maps.ControlPosition.LEFT_BOTTOM
+    },
+    mapTypeControl:false,
+    scaleControl:false,
+    streetViewControl:false,
+    minZoom: 10,
+    maxZoom: 15
+  };
+
+
 }])
