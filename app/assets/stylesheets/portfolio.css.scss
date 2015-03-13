@@ -1,0 +1,104 @@
+@import "color";
+
+// Portfolio Page
+#portfolio{
+  background-color: $primary-background-color; 
+  opacity: 0.9;
+  min-height: 400px;
+}
+
+.portfolios-wrapper{
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+div.minuspadding{
+  padding-left: 0px;
+  padding-right: 0px;
+  z-index: 0;
+  // height: 200px; 
+  // width: 200px;
+}
+
+div.outer{
+  border-radius: 10px;
+  z-index: 0;
+  overflow: hidden;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-content: center;
+}
+
+div.inner{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  &:hover{
+    border: solid 3px $primary-font-color;
+    border-radius: 10px;
+    background: black;
+    opacity: 0.8;
+    z-index: 1;
+  }
+}
+
+.project-name{
+  display: none;
+  z-index: 2;
+}
+
+.inner:hover .project-name{
+    display: block;
+    color: $hover-color;
+    font-weight: 30px;
+    font-size: 20px;
+    align-content: center center;
+    margin-top: 80px;
+}
+
+.emptyspan{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  align-content: center;
+}
+
+.mamahen{
+  background-image: image-url('mamahen.png');
+  align-content: center center;
+}
+.siubobo{
+  background-image: image-url('siubobo.png');
+  align-content: center center; 
+}
+.hikehk{
+  background-image: image-url('hikehk.png');
+  align-content: center center; 
+}
+.fritter{
+  background-image: image-url('fritter.png');
+  align-content: center center;
+}
+
+#gallery{
+  min-height: 500px;
+  background-color: $primary-background-color;
+  position: relative;
+  display: block;
+  // border: 2px solid red;
+}
+
+.angular-google-map-container{
+  height: 80vh;
+}
+

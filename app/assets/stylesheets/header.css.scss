@@ -12,16 +12,23 @@ font-family: 'Sancreek', cursive;*/
   background-color: $secondary-background-color;
   width: 100vw;
   height: 15vh;
+  min-height: 100px;
 
 }
 
-
-
+// the next block of Cassie touching ice on beach
 #landing{
   display: block;
   position: relative;
+  // height: 100vh;
 }
 
+#landing > div > img {
+  // height: 100%;
+
+}
+
+// upper left hand corner CASSIE MAK
 #myName{
   font-family: 'Rock Salt', cursive;
   font-size: 30px;
@@ -30,6 +37,7 @@ font-family: 'Sancreek', cursive;*/
   color: $primary-font-color;
 }
 
+// upper right hand corner menu
 #menu{
   font-family: 'Frijole', cursive;
   text-align: right;
@@ -45,11 +53,10 @@ font-family: 'Sancreek', cursive;*/
 }
 
 .menuList{
+  color: $primary-font-color;
   &:hover{
     text-decoration: none;
-    // why doesn't this work with $primary color
-    color: orange;
-    
+    color: $hover-color;
   }
 }
 

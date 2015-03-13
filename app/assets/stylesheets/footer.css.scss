@@ -19,9 +19,9 @@
 }
 
 .iconicon{
+  color: $primary-font-color;
   &:hover{
-    // why doesn't this work with $primary color
-    color: orange;
+    color: $hover-color;
   }
 }
 
