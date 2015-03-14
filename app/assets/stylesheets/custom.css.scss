@@ -2,6 +2,9 @@
 
 // About Page Blurb about myself
 #cassie{
+  background-image: url("AuoraIceland.jpg");
+  background-attachment: fixed;
+  background-size: cover;
   position: relative;
   display: block;
   overflow-y: hidden;
@@ -28,8 +31,10 @@
   display: block;
   z-index: 8;
   margin: auto;
-  width: 800px;
-  margin-top: 6vh;
+  max-width: 800px;
+  min-width: 50vw;
+  transform: translateZ(.3px) scale(.7) translateX(-10%) translateY(25%) rotate(-3deg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .7);
 }
 
 
