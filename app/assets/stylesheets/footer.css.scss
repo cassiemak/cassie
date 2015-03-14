@@ -25,7 +25,6 @@
   }
 }
 
-
 .footline {
   display: block;
   margin: auto;
@@ -69,3 +68,17 @@ i:link {
   color: $primary-font-color;
   border-bottom: none;
 }
+
+// Contact Page
+html body #map-canvas {
+  width: 100vw;
+  overflow: hidden;
+  transform: translateZ(0px);
+  top: 2.06473214285714px;
+  background-color: $primary-background-color;
+}
+
+.angular-google-map-container{
+  height: 80vh;
+}
+

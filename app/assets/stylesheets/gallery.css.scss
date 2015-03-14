@@ -1,0 +1,25 @@
+@import "color";
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,100,400);
+
+#gallery.slide{
+  background-color: $primary-background-color;
+  position: relative;
+  display: block;
+  padding: 0;
+  text-align: center;
+  min-height: 60vh;
+}
+
+#gallery > a > div {
+  // border: 2px solid red;
+  display: inline-block;
+  font-family: 'Frijole', cursive;
+  color: $secondary-font-color;
+  font-size: 40px;
+  transform: translateZ(.25px) scale(.75) translateX(0%) translateY(200%) rotate(0deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: $primary-background-color;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
