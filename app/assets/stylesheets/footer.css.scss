@@ -3,9 +3,14 @@
 #footer {
   background-color: $secondary-background-color;
   padding: 20px 10px 30px 5px;
-  font: white;
+  font: $primary-font-color;
   font-family: 'Frijole', cursive;
-  min-height: 200px;
+  min-height: 300px;
+}
+
+#footer > div > div{
+  color: $primary-font-color;
+  font-size: 16px;
 }
 
 .social {
@@ -29,6 +34,7 @@
   display: block;
   margin: auto;
   color: $primary-font-color;
+  bottom: 0;
 }
 
 .contactinfo {
@@ -76,6 +82,9 @@ html body #map-canvas {
   transform: translateZ(0px);
   top: 2.06473214285714px;
   background-color: $primary-background-color;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+  transform-style: inherit;
 }
 
 .angular-google-map-container{

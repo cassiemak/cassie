@@ -10,12 +10,18 @@ app.config(['$routeProvider', 'uiGmapGoogleMapApiProvider',  function($routeProv
       templateUrl: "<%= asset_path('gallery.html.erb') %>",
       controller: 'GalleryCtrl'
     })
-
     .when('/test', {
       templateUrl: "<%= asset_path('test.html') %>",
       controller: 'HomeCtrl'
     })
-
+    .when('/funstuff', {
+      templateUrl: "<%= asset_path('funstuff.html.erb') %>",
+      controller: 'FunCtrl'
+    })
+    .when('/travels', {
+      templateUrl: "<%= asset_path('travels.html.erb') %>",
+      controller: 'TravelCtrl'
+    })
     .otherwise({redirectTo: '/'});
 
   uiGmapGoogleMapApiProvider.configure({

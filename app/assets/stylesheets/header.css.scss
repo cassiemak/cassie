@@ -23,12 +23,16 @@ font-family: 'Sancreek', cursive;*/
   background-image: url("CassieIceBeach.jpg");
   background-size: cover;
   background-attachment: fixed;
+  text-align: center;
   // height: 100vh;
 }
 
-#landing > div > img {
-  // height: 100%;
-
+#landing > div > h1{
+  font-family: 'Frijole', cursive;
+  font-size: 50px;
+  right: 200px;
+  color: $primary-font-color;
+  margin: auto;
 }
 
 // upper left hand corner CASSIE MAK
@@ -59,7 +63,7 @@ font-family: 'Sancreek', cursive;*/
   color: $primary-font-color;
   &:hover{
     text-decoration: none;
-    color: $hover-color;
+    color: $secondary-font-color;
   }
 }
 
