@@ -1,23 +1,31 @@
 @import "color";
 
 // Portfolio Page
-#portfolio{
+#portfolio.slide{
   background-color: $primary-background-color;
   opacity: 0.9;
-  min-height: 400px;
-
+  min-height: 15vh;
 }
+
 
 .portfolios-wrapper{
   margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  color: $secondary-font-color;
+  // margin-top: 50px;
+  // margin-bottom: 50px;
+}
+
+.portfolios-wrapper > div > h1 {
+  font-family: 'Frijole', cursive;
+  font-size: 60px;
+  color: $secondary-font-color;
 }
 
 div.minuspadding{
   padding-left: 0px;
   padding-right: 0px;
   z-index: 0;
+  // perspective: 1px;
   // height: 200px; 
   // width: 200px;
 }
@@ -33,6 +41,10 @@ div.outer{
   background-repeat: no-repeat;
   background-size: cover;
   align-content: center;
+  &:hover{
+    // transform: rotateY(180deg);
+    // transform-style: preserve-3d;
+  }
 }
 
 div.inner{
@@ -43,9 +55,10 @@ div.inner{
   height: 100%;
   z-index: 1;
   &:hover{
-    border: solid 3px $primary-font-color;
+    border: solid 3px $secondary-font-color;
+    color: $secondary-font-color;
     border-radius: 10px;
-    background: black;
+    background: $primary-background-color;
     opacity: 0.8;
     z-index: 1;
   }
@@ -58,7 +71,8 @@ div.inner{
 
 .inner:hover .project-name{
     display: block;
-    color: $hover-color;
+    // color: $hover-color;
+    color: $secondary-font-color;
     font-weight: 30px;
     font-size: 20px;
     align-content: center center;

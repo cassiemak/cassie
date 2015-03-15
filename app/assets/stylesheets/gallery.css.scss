@@ -11,15 +11,26 @@
 }
 
 #gallery > a > div {
-  // border: 2px solid red;
   display: inline-block;
   font-family: 'Frijole', cursive;
   color: $secondary-font-color;
   font-size: 40px;
-  transform: translateZ(.25px) scale(.75) translateX(0%) translateY(200%) rotate(0deg);
+  transform: translateZ(.25px) scale(.75) translateX(10%) translateY(200%) rotate(0deg);
   padding: 10px;
   border-radius: 5px;
   background: $primary-background-color;
   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+#gallery > h1{
+  margin-top: 0;
+  padding-top: 50px;
+  font-family: 'Frijole', cursive;
+  font-size: 60px;
+  color: $secondary-font-color;
+}
+
+#gallery > a > div.fun {
+  transform: translateZ(.25px) scale(.75) translateX(10%) translateY(200%) rotate(0deg);
 }
 

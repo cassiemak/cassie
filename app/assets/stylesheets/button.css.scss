@@ -1,0 +1,340 @@
+// // $button--colors: (
+// //   grey: (text: #333, background: #bdc3c7),
+// //   white: (text: #333, background: #fff),
+// //   red: (text: #fff, background: #c0392b),
+// //   orange: (text: #fff, background: #e67e22),
+// //   yellow: (text: #fff, background: #f1c40f),
+// //   green: (text: #fff, background: #27ae60),
+// //   blue: (text: #fff, background: #446CB3),
+// //   dark-blue: (text: #fff, background: #2c3e50),
+// //   purple: (text: #fff, background: #8e44ad)
+// // );
+
+// // $button--colors-default: map-get($button--colors, grey);
+// // $button--sizes-default: 24px;
+
+// // $button--sizes: (
+// //   smallest: $button--sizes-default - 12,
+// //   smaller: $button--sizes-default - 8,
+// //   small: $button--sizes-default - 4,
+// //   normal: $button--sizes-default,
+// //   large: $button--sizes-default + 4,
+// //   larger: $button--sizes-default + 8,
+// //   largest: $button--sizes-default + 12
+// // );
+
+// $button--animations: (
+//   slide-down: (
+//     after: (
+//       default: (
+//         transition: height .2s ease-in-out,
+//         top: 0,
+//         height: 0%
+//       ),
+//       hover: ( height: 100% )
+//     )
+//   ),
+//   slide-up: (
+//     after: (
+//       default: (
+//         transition: height .2s ease-in-out,
+//         top: auto,
+//         bottom: 0,
+//         height: 0%
+//       ),
+//       hover: ( height: 100% )
+//     )
+//   ),
+//   slide-left: (
+//     after: (
+//       default: (
+//         transition: width .2s ease-in-out,
+//         left: 0,
+//         width: 0
+//       ),
+//       hover: ( width: 100% )
+//     )
+//   ),
+//   slide-right: (
+//     after: (
+//       default: (
+//         transition: width .2s ease-in-out,
+//         left: auto,
+//         right: 0,
+//         width: 0%
+//       ),
+//       hover: ( width: 100% )
+//     )
+//   ),
+//   zoom-in: (
+//     after: (
+//       default: (
+//         transition: transform .2s ease-in-out,
+//         transform: scale(0)
+//       ),
+//       hover: ( transform: scale(1) )
+//     )
+//   ),
+//   zoom-out: (
+//     before: (
+//       default: (
+//         transition: transform .2s ease-in-out,
+//         transform: scale(1),
+//         z-index: 2
+//       ),
+//       hover: ( transform: scale(0),z-index: 1 )
+//     )
+//   ),
+//   uncover-up: (
+//     before:(
+//       default: (
+//         transition: transform .2s ease-out,
+//         transform: rotateX(0deg) translateZ(0),
+//         transform-origin: top center,
+//         z-index: 2
+//       ),
+//       hover: ( transform: rotateX( 95deg ) translateZ(0) )
+//     ),
+//     after: (
+//       default: (z-index:1)
+//     )
+//   ),
+//   uncover-down: (
+//     before:(
+//       default: (
+//         transition: transform .2s ease-in,
+//         transform: rotateX(0deg) translateZ(0),
+//         transform-origin: bottom center,
+//         z-index: 2
+//       ),
+//       hover: ( transform: rotateX( -95deg ) translateZ(0) )
+//     ),
+//     after: (
+//       default: (z-index:1)
+//     )
+//   )
+// );
+
+
+// button, .button {
+//   display: inline-block;
+//   position: relative;
+//   cursor: pointer;
+  
+//   margin: 10px;
+  
+//   user-select: none;
+//   text-decoration: none;
+  
+//   perspective: 800px;
+  
+//   border: none;
+//   background: none;
+//   // color: map-get($button--colors-default, text);
+  
+//   // font-size: $button--sizes-default;
+//   // padding: $button--sizes-default/1.5;
+  
+//   transition: color .25s;
+  
+//   &:after {
+//     opacity: 0;
+    
+//     transition: all .25s;
+    
+//     background: lighten(map-get($button--colors-default, background), 10)
+//   }
+  
+//   &:before {
+//    // background: map-get($button--colors-default, background);
+//   }
+  
+//   &:hover {
+//     &:after {
+//       opacity: 1;
+//     }
+//   }
+  
+//   > span {
+//     position: relative;
+//     z-index: 2;
+//   }
+// }
+// //   @each $color-name, $current-list in $button--colors {
+// //     $background-color: map-get($current-list, background);
+// //     $text-color: map-get($current-list, text);
+// //     &.#{$color-name}{
+// //       color: $text-color;
+// //       &:before {
+// //         background: $background-color;
+// //       }
+// //       &:after {
+// //         background: lighten($background-color,10);
+// //       }
+// //     }
+// //     &.secondary-#{$color-name}{
+// //       &:hover {
+// //         color: $text-color !important;
+// //       }
+// //       &:after {
+// //         background: $background-color !important;
+// //       }
+// //     }
+// //   }
+  
+// //   @each $anim-name, $anim-list in $button--animations {
+// //     &.animation-#{$anim-name} {
+      
+// //       // Clear transitions from default animation
+// //       &:after {
+// //         transition: none;
+// //         opacity: 1;
+// //       }
+      
+// //       @each $pseudo-type, $pseudo-list in $anim-list {
+        
+// //         &:#{$pseudo-type} {
+// //           @each $css-key, $css-value in map-get($pseudo-list, default) {
+// //             #{$css-key}: $css-value;
+// //           }
+// //         }
+// //         @each $pseudo-key, $pseudo-css-list in $pseudo-list {
+// //           @if $pseudo-key != default {
+// //             &:#{$pseudo-key}:#{$pseudo-type} {
+
+// //               @each $css-key, $css-value in $pseudo-css-list {
+// //                 #{$css-key}: $css-value;
+// //               }
+// //             }
+// //           }
+// //         }
+// //       }
+// //     }
+// //   }
+  
+// //   @each $size-name, $font-size in $button--sizes {
+// //     &.#{$size-name} {
+// //       font-size: $font-size;
+// //       padding: $font-size/1.5;
+// //     }
+// //   }
+  
+// //   &:before, &:after {
+// //     position: absolute;
+// //     top: 0;
+// //     left: 0;
+    
+// //     content: "";
+    
+// //     width: 100%;
+// //     height: 100%;
+    
+// //   }
+// // }
+
+
+
+
+
+
+// /** Demo Page Styling **/
+// // *{ font-family: 'PT Sans', sans-serif; }
+
+// // html, body {
+// //   min-height: 100%;
+// //   height: 100%;
+// //   padding: 0;
+// //   margin: 0;
+// // }
+
+// // body {
+// //   background: url(http://img.wallpaperstock.net:81/blurred-nature-scenery-wallpapers_35218_1366x768.jpg);
+// //   background-repeat: no-repeat;
+// //   background-size: cover;
+// //   background-position: center center;
+  
+// //   font-family: 'PT Sans', sans-serif;
+// // }
+
+// // div#wrapper {
+// //   position: relative;
+// //   min-height: 100%;
+// //   height: 100%;
+// // }
+
+// // div#header {
+// //   position: relative;
+// //   min-height: 525px;
+  
+  
+// //   background: rgba(0,0,0,.3);
+  
+// //   small {
+// //     color: #fff;
+// //     a {
+// //       color: #fff;
+// //     }
+// //   }
+  
+// //   div#header--container {
+// //     width: 650px;
+    
+// //     color: #fff;
+    
+// //     position: absolute;
+// //     top: 35%;
+// //     left: 50%;
+// //     transform: translateX(-50%);
+    
+// //     .header--scroll-wrapper {
+// //       padding: 50px 0;
+// //       text-align: center;
+// //     }
+// //   }
+// //   h1#title {
+// //     font-size: 3em;
+
+// //     color: #fff;
+// //     text-shadow:
+// //       0 3px 12px rgba(0,0,0,.6);
+    
+// //     text-align: center;
+
+// //     margin: 0 0 20px 0;
+    
+// //     opacity: .8;
+// //   }
+// // }
+
+// // div.container {
+// //   max-width: 650px;
+// //   margin: 0 auto;
+// //   padding: 20px 0;
+// // }
+
+
+
+// // div#content {
+// //   background: #fff;
+  
+// //   section{
+// //     margin: 0 0 100px 0;
+// //     > h1 {
+// //       font-size: 3em;
+// //     }
+// //     small {
+// //       color: #000;
+// //       opacity: .6;
+// //       a {
+// //         color: #000;
+// //       }
+// //     }
+// //     > div {
+// //       border-radius: 4px;
+// //       padding: 10px;
+// //       &.grey {
+// //         background: #ddd;
+// //       }
+// //     }
+// //   }
+// // }
