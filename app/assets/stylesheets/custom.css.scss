@@ -1,225 +1,50 @@
-// Application default to all
-.body-background{
-  /*background-color: #333330;*/
-  background-color: #bfbfbb;
-  /*color: #bfbfbb;*/
-  background-color: transparent;
+@import "color";
+
+// About Page Blurb about myself
+#cassie{
+  background-image: url("AuoraIceland.jpg");
+  background-attachment: fixed;
   background-size: cover;
-  color: #333330;
+  position: relative;
+  display: block;
+  overflow-y: hidden;
+  height: 85vh;
+  // max-height: 800px;
+  // min-height: 600px;
+  // z-index: 6;
 }
 
-.vertical-center {
-  min-height: 100%;
-  min-height: 75vh;
-  display: flex;
-  align-items: center;
+.aurora-pix{
+  position: absolute;
+  display: block;
+  // z-index: 6;
+  // max-height: 700px;
+  // height: 100%;
+  // overflow-y: hidden;
 }
 
-p{
-  padding: 5px;
-}
-
-
-
-
-
-// Home Page
-.home {
-  background-image: image-url('CassieIceBeach.JPG');
-  background-size: cover;
-}
-
-.title_des{
-  margin: 35px 0px;
-}
-
-#mytitle{
-  font-family: 'Rock Salt', cursive;
-  min-height: 500px;
-  background-color: rgba(229, 227, 223, 0.7);
-  color: rgba(255, 153, 0, 0.8);
-  // align-content: right;
-  display: inline-block;
-  text-align: center;
-}
-
-
-
-// About Page
-.cassie{
-  background-image: image-url('AuoraIceland.JPG');
-  background-size: cover;
-}
-
-// Blurb about myself
 #aboutSquare{
-  background-color: rgba(229, 227, 223, 0.3);
-  color: rgba(255, 153, 0, 0.8);
+  background-color: $primary-background-color;
+  color: $primary-font-color;
   padding: 20px;
-}
-
-
-
-
-
-// Portfolio Page
-.portfolio{
-  background-image: image-url('background2.jpg');
-  background-size: cover;
-}
-
-div.minuspadding{
-  padding-left: 0px;
-  padding-right: 0px;
-  z-index: 0;
-}
-
-div.outer{
-  border-radius: 10px;
-  z-index: 0;
-  overflow: hidden;
-  height: 250px;
-  width: 100%;
   position: relative;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-content: center;
+  display: block;
+  z-index: 8;
+  margin: auto;
+  max-width: 800px;
+  min-width: 50vw;
+  transform: translateZ(.3px) scale(.7) translateX(-10%) translateY(25%) rotate(-3deg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .7);
 }
 
-div.inner{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  &:hover{
-    border: solid 3px orange;
-    border-radius: 10px;
-    background: black;
-    opacity: 0.7;
-    z-index: 1;
-  }
+#aboutSquare > h1 {
+  font-family: 'Frijole', cursive;
+  font-size: 60px;
 }
 
-.project-name{
-  display: none;
-  z-index: 2;
-}
-
-.inner:hover .project-name{
-    display: block;
-    color: white;
-    font-weight: 30px;
-    font-size: 20px;
-    align-content: center center;
-    margin-top: 80px;
-}
-
-.emptyspan{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  align-content: center;
-}
-
-.mamahen{
-  background-image: image-url('mamahen.png');
-  align-content: center;
-}
-.siubobo{
-  background-image: image-url('siubobo.png');
-}
-.highchart{
-  background-image: image-url('highchart.png');
-}
-.reddit{
-  background-image: image-url('reddit.png');
-  align-content: center center;
-}
-.mathgame{
-  background-image: image-url('javascriptAjax10SecOfMathGame.png');
-}
-.shoppingcart{
-  background-image: image-url('jquerySimpleShoppingCart.png');
-}
-
-
-
-
-
-
-// Gallery Page
-.gallery{
-  background-image: image-url('background2.jpg');
+#ski{
+  background-image: url("BlackSandBeach.jpg");
+  background-attachment: fixed;
   background-size: cover;
 }
 
-.picture-grid{
-
-}
-.gallery-pix{
-border-radius: 25px;
-}
-// changing the speed of the carousel?
-// .carousel-inner < .item {
-//     position: relative;
-//     display: none;
-//     -webkit-transition: 22.6s ease-in-out left;
-//     -moz-transition: 22.6s ease-in-out left;
-//     -o-transition: 22.6s ease-in-out left;
-//     transition: 22.6s ease-in-out left;
-// }
-
-
-
-// Travel page
-.travel{
-
-}
-
-
-
-
-// Contact Page
-#map-canvas {
-  // width: 500px;
-  // height: 700px;
-  width: 100%;
-  min-height: 800px;
-  overflow: hidden;
-  transform: translateZ(0px);
-  top: 2.06473214285714px;
-  background-color: rgb(229, 227, 223);
-  position: absolute;
-  z-index: 0;
-}
-
-.contact {
-  position: relative;
-  z-index: 1;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-image: image-url('background2.jpg');
-  background-size: cover;
-}
-
-#contact-message-box{
-  width: 161px;
-}
-
-#myHome {
-
-}
-
-#mySchool{
-
-}
-
-#myBirthPlace {
-  
-}

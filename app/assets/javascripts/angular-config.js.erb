@@ -1,0 +1,34 @@
+var app = angular.module("cassie", ['ngRoute', 'ui.bootstrap', 'uiGmapgoogle-maps']);
+
+app.config(['$routeProvider', 'uiGmapGoogleMapApiProvider',  function($routeProvider, uiGmapGoogleMapApiProvider){
+  $routeProvider
+    .when('/', {
+      templateUrl: "<%= asset_path('cass.html.erb') %>",
+      controller: 'HomeCtrl'
+    })
+    .when('/gallery', {
+      templateUrl: "<%= asset_path('gallery.html.erb') %>",
+      controller: 'GalleryCtrl'
+    })
+    .when('/test', {
+      templateUrl: "<%= asset_path('test.html') %>",
+      controller: 'HomeCtrl'
+    })
+    .when('/funstuff', {
+      templateUrl: "<%= asset_path('funstuff.html.erb') %>",
+      controller: 'FunCtrl'
+    })
+    .when('/travels', {
+      templateUrl: "<%= asset_path('travels.html.erb') %>",
+      controller: 'TravelCtrl'
+    })
+    .otherwise({redirectTo: '/'});
+
+  uiGmapGoogleMapApiProvider.configure({
+    key: "<%= ENV['CASSIE_GOOGLEKEY'] %>",
+    v: '3.17',
+    libraries: 'weather,geometry,visualization'
+  });
+
+}]);
+

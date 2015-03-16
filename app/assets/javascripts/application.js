@@ -12,7 +12,16 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require angular
+//= require angular-animate
+//= require angular-resource
+//= require angular-route
+//= require angular-ui-bootstrap-tpls
+//= require angular-google-maps
+//= require bootstrap
 //= require bootstrap-sprockets
+//= require underscore
+//= require lodash
+//= require jquery-ui
 //= require_tree .
-
-// added for google map background?
+//= require_tree ./angular
