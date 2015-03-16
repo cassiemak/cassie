@@ -120,12 +120,15 @@
 
   <div ng-show="showWeChat" id="modalbackground">
     <button ng-click="switchWeChat()" class="btn btn-danger">HIDE</button>
-    <img src="assets/wechatqrcode.png">
+    <!-- <img src="assets/wechatqrcode.png"> -->
+    <img src="<%=asset_path('wechatqrcode.png')%>">
   </div>
 
   <div ng-show="showSkype" id="modalbackground">
     <button ng-click="switchSkype()" class="btn btn-danger">HIDE</button>
-    <img src="assets/skypeqrcode.png">
+    <!-- <img src="assets/skypeqrcode.png"> -->
+    <img src="<%=asset_path('skypeqrcode.png')%>">
+    
   </div>
   
   <div id="footer" class="container-fluid">
