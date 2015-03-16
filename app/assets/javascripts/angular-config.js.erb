@@ -10,10 +10,10 @@ app.config(['$routeProvider', 'uiGmapGoogleMapApiProvider',  function($routeProv
       templateUrl: "<%= asset_path('gallery.html.erb') %>",
       controller: 'GalleryCtrl'
     })
-    .when('/test', {
-      templateUrl: "<%= asset_path('test.html') %>",
-      controller: 'HomeCtrl'
-    })
+    // .when('/test', {
+    //   templateUrl: "<%= asset_path('test.html') %>",
+    //   controller: 'HomeCtrl'
+    // })
     .when('/funstuff', {
       templateUrl: "<%= asset_path('funstuff.html.erb') %>",
       controller: 'FunCtrl'

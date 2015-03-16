@@ -11,9 +11,16 @@ app.controller('HomeCtrl', ['$scope','uiGmapGoogleMapApi', function($scope, uiGm
   console.log("home controller running");
 
   $scope.showWeChat = false;
-  $scope.switchModal = function() {
-    console.log($scope.showWeChat);
+  $scope.switchWeChat = function() {
     $scope.showWeChat =!$scope.showWeChat;
+    $scope.showSkype = false;
+    // add scroll to bottom 
+  }
+
+  $scope.showSkype = false;
+  $scope.switchSkype = function() {
+    $scope.showSkype =!$scope.showSkype;
+    $scope.showWeChat = false;
     // add scroll to bottom 
   }
 

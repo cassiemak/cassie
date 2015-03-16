@@ -11,8 +11,6 @@
 .portfolios-wrapper{
   margin: auto;
   color: $secondary-font-color;
-  // margin-top: 50px;
-  // margin-bottom: 50px;
 }
 
 .portfolios-wrapper > div > h1 {
@@ -21,20 +19,20 @@
   color: $secondary-font-color;
 }
 
-div.minuspadding{
-  padding-left: 0px;
-  padding-right: 0px;
-  z-index: 0;
-  // perspective: 1px;
-  // height: 200px; 
-  // width: 200px;
+div.projectOne{
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 200px; 
+  width: 200px;
+  display: inline-block;
 }
 
 div.outer{
   border-radius: 10px;
   z-index: 0;
   overflow: hidden;
-  height: 250px;
+  // height: 250px;
+  height: 100%;
   width: 100%;
   position: relative;
   background-position: center center;
@@ -70,13 +68,13 @@ div.inner{
 }
 
 .inner:hover .project-name{
-    display: block;
-    // color: $hover-color;
+    // display: block;
+    display: flex;
     color: $secondary-font-color;
     font-weight: 30px;
     font-size: 20px;
     align-content: center center;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .emptyspan{
@@ -90,8 +88,6 @@ div.inner{
 
 .mamahen{
   background-image: url('mamahen.png');
-  // background-image: url("CassieIceBeach.jpg");
-
   align-content: center center;
 }
 .siubobo{

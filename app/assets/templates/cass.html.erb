@@ -26,13 +26,12 @@
   
   <div id="portfolio" class="container-fluid slide">
     <div class="row">
-      <div class="col-sm-8 col-sm-offset-2 text-center portfolios-wrapper">
+      <div class="text-center portfolios-wrapper">
         <div>
           <h1>Startup & </br> Web Development</h1>
-   <!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incidin proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
         </div>
-        <div class="minuspadding col-sm-3">
+
+        <div class="projectOne">
           <div class="outer mamahen">
             <div class="inner project">
               <p class="project-name">Startup -</br> mamahen.com.hk,</br> the ultimate gift registry</p>
@@ -40,7 +39,8 @@
             </div>
           </div>
         </div>
-        <div class="minuspadding col-sm-3">
+
+        <div class="projectOne">
           <div class="outer siubobo">
             <div class="inner project">
               <p class="project-name">Ruby on Rails -</br> Baby Product Review</p>
@@ -48,7 +48,8 @@
             </div>
           </div>
         </div>
-        <div class="minuspadding col-sm-3">
+
+        <div class="projectOne">
           <div class="outer fritter">
             <div class="inner project">
               <p class="project-name">Cloning Pinterest -</br>Fritter</p>
@@ -56,7 +57,8 @@
             </div>
           </div>
         </div>
-        <div class="minuspadding col-sm-3">
+
+        <div class="projectOne">
           <div class="outer hikehk">
             <div class="inner project">
               <p class="project-name">AngularJS & Ionic -</br> HikeHK</p>
@@ -64,6 +66,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -102,7 +105,7 @@
     <a href="#/travels"><div>Travels</div></a>
   </div>
 
-  <div id="ski" class="container-fluid slide"> 
+  <div id="photoOfTheDay" class="container-fluid slide"> 
   </div>
 
 
@@ -114,10 +117,17 @@
       options ="options">
     </ui-gmap-google-map>
   </div>
+
   <div ng-show="showWeChat" id="modalbackground">
-    <button ng-click="switchModal()" class="btn btn-danger">HIDE</button>
+    <button ng-click="switchWeChat()" class="btn btn-danger">HIDE</button>
     <img src="assets/wechatqrcode.png">
   </div>
+
+  <div ng-show="showSkype" id="modalbackground">
+    <button ng-click="switchSkype()" class="btn btn-danger">HIDE</button>
+    <img src="assets/skypeqrcode.png">
+  </div>
+  
   <div id="footer" class="container-fluid">
     <div class="text-center">
       </br>
@@ -135,9 +145,11 @@
           <li class="icon"><a href="http://instagram.com/sassycassandra" class="iconicon"><i class="fa fa-instagram fa-2x"></i></a></li>
           <li class="icon"><a href="https://plus.google.com/+CassandraMak/" class="iconicon"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
           <li class="icon"><a href="http://www.pinterest.com/cassandramak/" class="iconicon"><i class="fa fa-pinterest-square fa-2x"></i></a></li>
-          <!-- <li class="icon"><a href="https://dl.dropboxusercontent.com/u/7814617/cassie-wechatqrcode.png" class="iconicon"><i class="fa fa-weixin fa-2x"></i></a></li> -->
-          <li class="icon"><a href="" ng-click="switchModal()"  class="iconicon"><i class="fa fa-weixin fa-2x"></i></a></li>
-          <li class="icon"><a href="" class="iconicon"><i class="fa fa-skype fa-2x"></i></a></li>
+          <li class="icon"><a href="" ng-click="switchWeChat()"  class="iconicon"><i class="fa fa-weixin fa-2x"></i></a></li>
+          <li class="icon"><a href="" class="iconicon" ng-click="switchSkype()"><i class="fa fa-skype fa-2x"></i></a></li>
+          <li class="icon"><a href="https://angel.co/cassie-mak" class="iconicon"><i class="fa fa-angellist fa-2x"></i></a></li>
+          <li class="icon"><a href="https://twitter.com/CassieMak" class="iconicon"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+          <li class="icon"><a href="https://www.youtube.com/user/cassiemak" class="iconicon"><i class="fa fa-youtube-square fa-2x"></i></a></li>
         </ul>
       </div>
       <div class="footline">
