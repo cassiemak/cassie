@@ -15,3 +15,13 @@
       <img src="assets/AuoraIceland.jpg">
     </div>
   </div>
+
+  <div onmouseover="rotateYDIV()" id="rotatey1" class="animated_div" style="transform: rotateY(180deg); -webkit-transform: rotateY(180deg);">
+    3D rotate
+function rotateYDIV()
+{
+y=document.getElementById("rotatey1")
+clearInterval(rotYINT)
+rotYINT=setInterval("startYRotate()",10)
+}
+  </div>

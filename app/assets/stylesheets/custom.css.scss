@@ -48,3 +48,11 @@
   background-size: cover;
 }
 
+#photoOfTheDay > h1{
+  color: $primary-font-color;
+  position: absolute;
+  font-family: 'Frijole', cursive;
+  font-size: 40px;
+  top: 2px;
+  right: 2px;
+}

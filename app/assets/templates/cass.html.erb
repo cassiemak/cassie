@@ -34,7 +34,7 @@
         <div class="projectOne">
           <div class="outer mamahen">
             <div class="inner project">
-              <p class="project-name">Startup -</br> mamahen.com.hk,</br> the ultimate gift registry</p>
+              <p class="project-name"> Founder -</br> mamahen.com.hk,</br> the ultimate gift registry</p>
               <a href="http://www.mamahen.com.hk/"><span class="emptyspan"></span></a>
             </div>
           </div>
@@ -52,7 +52,7 @@
         <div class="projectOne">
           <div class="outer fritter">
             <div class="inner project">
-              <p class="project-name">Cloning Pinterest -</br>Fritter</p>
+              <p class="project-name">Cloning Pinterest -</br> AngularJS & Mansonry -</br> Fritter</p>
               <a href="https://wdi-fritter.herokuapp.com/#/"><span class="emptyspan"></span></a>
             </div>
           </div>
@@ -75,25 +75,9 @@
     <div class="row">
       <div id="aboutSquare">
         <h1>About Me</h1>
-        <p>Born in Toronto, Canada, I spent most of my childrenhood in Hong Kong. 
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et cupidatat nonproident, sunt in culpa qui officia 
-          deserunt mollit anim id estaborum.</p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <p>Born in Toronto, Canada, I spent most of my childhood in Hong Kong. I received my higher education at an American preparatory boarding school - Northfield Mount Hermon School and graudated from University of Wisconsin - Madison in Economics. </p>
+        <p> A multi-tasks financial services executive combining an MBA from HKUST with six years of operations experience in equity trading and investment management.  Proven track record in developing and managing investor relationships with institutional and high-net-worth clients.  Exceptional interpersonal skills and leadership ability in leading cross-functional teams to tackle operational anomalies with process mapping and problem solving.  A flair for orchestrating major investor events and an articulate communicator fluent in English, Cantonese and Mandarin. </p>
+        <p> Pivoted from a corporate financial career, I am passionate in the technology industry; I have dived into web development with General Assembly - Web Development Immersive where I have learned CSS3, HTML5, Javascript, jQuery, AngularJS etc. In addition to programming, in 2014 I have also founded my first startup - mamahen, the first e-gift registry platform for mothers and mothers-to-be in Hong Kong.</p>
       </div>
     </div>
   </div>
@@ -106,9 +90,8 @@
   </div>
 
   <div id="photoOfTheDay" class="container-fluid slide"> 
+    <h1>Web Dev Immersive 6 </br> Class of 2015 March</h1>
   </div>
-
-
 
   <div id="map-canvas" class="">
     <ui-gmap-google-map 
@@ -116,19 +99,19 @@
       zoom    ="map.zoom" 
       options ="options">
     </ui-gmap-google-map>
+    <div id="on-map">
+      Cassie's home
+    </div>
   </div>
 
   <div ng-show="showWeChat" id="modalbackground">
-    <button ng-click="switchWeChat()" class="btn btn-danger">HIDE</button>
-    <!-- <img src="assets/wechatqrcode.png"> -->
+    <button ng-click="switchWeChat()" class="btn btn-warning">HIDE</button>
     <img src="<%=asset_path('wechatqrcode.png')%>">
   </div>
 
   <div ng-show="showSkype" id="modalbackground">
-    <button ng-click="switchSkype()" class="btn btn-danger">HIDE</button>
-    <!-- <img src="assets/skypeqrcode.png"> -->
+    <button ng-click="switchSkype()" class="btn btn-warning">HIDE</button>
     <img src="<%=asset_path('skypeqrcode.png')%>">
-    
   </div>
   
   <div id="footer" class="container-fluid">
