@@ -5,8 +5,18 @@
   background-color: $primary-background-color;
   opacity: 0.9;
   min-height: 15vh;
+  text-align: center;
 }
 
+#portfolio.slide > i {
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  color: $secondary-font-color;
+  &:hover{
+    color: $primary-font-color;
+  }
+}
 
 .portfolios-wrapper{
   margin: auto;
@@ -17,6 +27,7 @@
   font-family: 'Frijole', cursive;
   font-size: 60px;
   color: $secondary-font-color;
+  margin-bottom: 30px;
 }
 
 div.projectOne{

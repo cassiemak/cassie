@@ -39,6 +39,16 @@ font-family: 'Sancreek', cursive;*/
   margin: auto;
 }
 
+#landing > i {
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  color: $primary-font-color;
+  &:hover{
+  color: $secondary-font-color;
+  }
+}
+
 // upper left hand corner CASSIE MAK
 #myName{
   font-family: 'Rock Salt', cursive;
