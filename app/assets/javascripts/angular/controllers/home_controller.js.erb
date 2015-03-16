@@ -10,6 +10,13 @@ app.controller('HomeCtrl', ['$scope','uiGmapGoogleMapApi', function($scope, uiGm
 
   console.log("home controller running");
 
+  $scope.showWeChat = false;
+  $scope.switchModal = function() {
+    console.log($scope.showWeChat);
+    $scope.showWeChat =!$scope.showWeChat;
+    // add scroll to bottom 
+  }
+
   var homeMap = {
     center: { 
       latitude: 22.269883,

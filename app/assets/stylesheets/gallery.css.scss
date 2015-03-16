@@ -38,3 +38,27 @@
   transform: translateZ(.25px) scale(.75) translateX(10%) translateY(200%) rotate(0deg);
 }
 
+#gallerywrap{
+  // background-color: $primary-background-color;
+}
+
+.pageTitle{
+  text-align: center;
+  font-family: 'Frijole', cursive;
+  font-size: 60px;
+  color: $secondary-font-color;
+}
+
+// Gallery html page
+div.allPicWrap > div{
+  margin: auto;
+}
+
+.allPicWrap > div> img{
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  padding-bottom: 4px;
+}
+
+

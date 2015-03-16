@@ -2,10 +2,11 @@
 
 #footer {
   background-color: $secondary-background-color;
-  padding: 20px 10px 30px 5px;
+  // padding: 20px 10px 30px 5px;
   font: $primary-font-color;
   font-family: 'Frijole', cursive;
   min-height: 300px;
+  position: inherit;
 }
 
 #footer > div > div{
@@ -91,3 +92,28 @@ html body #map-canvas {
   height: 80vh;
 }
 
+#modalbackground{
+  background-color: $secondary-background-color;
+  z-index: 30;
+  position: relative;
+  min-height: 50vh;
+  width: 100vw;
+  text-align: center;
+  align-content: center;
+  margin: auto;
+  display: flex;
+}
+
+#modalbackground > img{
+  height: 300px;
+  width: 300px;
+  display: flex;
+  margin: auto;
+  margin-top: auto;
+}
+
+#modalbackground > button{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
