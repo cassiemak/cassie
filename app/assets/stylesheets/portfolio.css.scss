@@ -89,19 +89,21 @@ div.inner{
 }
 
 .mamahen{
-  background-image: image-url('mamahen.png');
+  background-image: url('mamahen.png');
+  // background-image: url("CassieIceBeach.jpg");
+
   align-content: center center;
 }
 .siubobo{
-  background-image: image-url('siubobo.png');
+  background-image: url('siubobo.png');
   align-content: center center; 
 }
 .hikehk{
-  background-image: image-url('hikehk.png');
+  background-image: url('hikehk.png');
   align-content: center center; 
 }
 .fritter{
-  background-image: image-url('fritter.png');
+  background-image: url('fritter.png');
   align-content: center center;
 }
 
