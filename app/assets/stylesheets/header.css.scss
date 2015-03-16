@@ -6,13 +6,14 @@ font-family: 'Sancreek', cursive;*/
 @import "color";
 
 #fullbar{
-  position: fixed;
+  position: absolute;
   display: block;
   z-index: 10;
   // background-color: $secondary-background-color;
   width: 100vw;
   height: 15vh;
   min-height: 100px;
+  // border: 2px red solid;
 
 }
 
@@ -25,6 +26,8 @@ font-family: 'Sancreek', cursive;*/
   background-attachment: fixed;
   text-align: center;
   // height: 100vh;
+  // border: 2px red solid;
+
 }
 
 #landing > div > h1{
