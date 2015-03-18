@@ -38,6 +38,16 @@
   transform: translateZ(.25px) scale(.75) translateX(10%) translateY(200%) rotate(0deg);
 }
 
+#gallery > i {
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  color: $secondary-font-color;
+  &:hover{
+    color: $primary-font-color;
+  }
+}
+
 .pageTitle{
   text-align: center;
   font-family: 'Frijole', cursive;

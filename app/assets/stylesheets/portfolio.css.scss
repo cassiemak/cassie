@@ -5,8 +5,18 @@
   background-color: $primary-background-color;
   opacity: 0.9;
   min-height: 15vh;
+  text-align: center;
 }
 
+#portfolio.slide > i {
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  color: $secondary-font-color;
+  &:hover{
+    color: $primary-font-color;
+  }
+}
 
 .portfolios-wrapper{
   margin: auto;
@@ -17,6 +27,7 @@
   font-family: 'Frijole', cursive;
   font-size: 60px;
   color: $secondary-font-color;
+  margin-bottom: 30px;
 }
 
 div.projectOne{
@@ -87,19 +98,19 @@ div.inner{
 }
 
 .mamahen{
-  background-image: url('mamahen.png');
+  background-image: url('/assets/mamahen.png');
   align-content: center center;
 }
 .siubobo{
-  background-image: url('siubobo.png');
+  background-image: url('/assets/siubobo.png');
   align-content: center center; 
 }
 .hikehk{
-  background-image: url('hikehk.png');
+  background-image: url('/assets/hikehk.png');
   align-content: center center; 
 }
 .fritter{
-  background-image: url('fritter.png');
+  background-image: url('/assets/fritter.png');
   align-content: center center;
 }
 

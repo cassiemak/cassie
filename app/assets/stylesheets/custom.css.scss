@@ -2,16 +2,27 @@
 
 // About Page Blurb about myself
 #cassie{
-  background-image: url("AuoraIceland.jpg");
+  background-image: url("/assets/AuoraIceland.jpg");
   background-attachment: fixed;
   background-size: cover;
   position: relative;
   display: block;
   overflow-y: hidden;
   height: 85vh;
+  text-align: center;
   // max-height: 800px;
   // min-height: 600px;
   // z-index: 6;
+}
+
+#cassie > i {
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  color: $primary-font-color;
+  &:hover{
+    color: $secondary-font-color;
+  }
 }
 
 .aurora-pix{
@@ -43,8 +54,27 @@
 }
 
 #photoOfTheDay{
-  background-image: url("wdi6.jpg");
+  background-image: url("/assets/wdi6.jpg");
   background-attachment: fixed;
   background-size: cover;
+  text-align: center;
 }
 
+#photoOfTheDay > h1{
+  color: $primary-font-color;
+  position: absolute;
+  font-family: 'Frijole', cursive;
+  font-size: 40px;
+  top: 2px;
+  right: 2px;
+}
+
+#photoOfTheDay > i {
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  color: $primary-font-color;
+  &:hover{
+  color: $secondary-font-color;
+  }
+}

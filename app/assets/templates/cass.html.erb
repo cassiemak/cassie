@@ -22,9 +22,11 @@
     <div class="row vertical-center">
       <h1>CASSIE MAK</h1>
     </div>
+    <i class="fa fa-caret-down fa-5x"></i>
   </div>
   
   <div id="portfolio" class="container-fluid slide">
+    <i class="fa fa-caret-down fa-5x"></i>
     <div class="row">
       <div class="text-center portfolios-wrapper">
         <div>
@@ -34,8 +36,8 @@
         <div class="projectOne">
           <div class="outer mamahen">
             <div class="inner project">
-              <p class="project-name">Startup -</br> mamahen.com.hk,</br> the ultimate gift registry</p>
-              <a href="http://www.mamahen.com.hk/"><span class="emptyspan"></span></a>
+              <p class="project-name"> Founder -</br> mamahen.com.hk,</br> the ultimate gift registry</p>
+              <a href="http://www.mamahen.com.hk/" target="_blank" ><span class="emptyspan"></span></a>
             </div>
           </div>
         </div>
@@ -44,7 +46,7 @@
           <div class="outer siubobo">
             <div class="inner project">
               <p class="project-name">Ruby on Rails -</br> Baby Product Review</p>
-              <a href="https://product-review.herokuapp.com/"><span class="emptyspan"></span></a>
+              <a href="https://product-review.herokuapp.com/" target="_blank" ><span class="emptyspan"></span></a>
             </div>
           </div>
         </div>
@@ -52,8 +54,8 @@
         <div class="projectOne">
           <div class="outer fritter">
             <div class="inner project">
-              <p class="project-name">Cloning Pinterest -</br>Fritter</p>
-              <a href="https://wdi-fritter.herokuapp.com/#/"><span class="emptyspan"></span></a>
+              <p class="project-name">Cloning Pinterest -</br> AngularJS & Mansonry -</br> Fritter</p>
+              <a href="https://wdi-fritter.herokuapp.com/#/" target="_blank" ><span class="emptyspan"></span></a>
             </div>
           </div>
         </div>
@@ -62,11 +64,10 @@
           <div class="outer hikehk">
             <div class="inner project">
               <p class="project-name">AngularJS & Ionic -</br> HikeHK</p>
-              <a href="https://hikehk.herokuapp.com/#/"><span class="emptyspan"></span></a>
+              <a href="https://hikehk.herokuapp.com/#/" target="_blank" ><span class="emptyspan"></span></a>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -75,30 +76,16 @@
     <div class="row">
       <div id="aboutSquare">
         <h1>About Me</h1>
-        <p>Born in Toronto, Canada, I spent most of my childrenhood in Hong Kong. 
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et cupidatat nonproident, sunt in culpa qui officia 
-          deserunt mollit anim id estaborum.</p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <p>Born in Toronto, Canada, I spent most of my childhood in Hong Kong. I received my higher education at an American preparatory boarding school - Northfield Mount Hermon School and graudated from University of Wisconsin - Madison in Economics. </p>
+        <p> A multi-tasks financial services executive combining an MBA from HKUST with six years of operations experience in equity trading and investment management.  Proven track record in developing and managing investor relationships with institutional and high-net-worth clients.  Exceptional interpersonal skills and leadership ability in leading cross-functional teams to tackle operational anomalies with process mapping and problem solving.  A flair for orchestrating major investor events and an articulate communicator fluent in English, Cantonese and Mandarin. </p>
+        <p> Pivoted from a corporate financial career, I am passionate in the technology industry; I have dived into web development with General Assembly - Web Development Immersive where I have learned CSS3, HTML5, Javascript, jQuery, AngularJS etc. In addition to programming, in 2014 I have also founded my first startup - mamahen, the first e-gift registry platform for mothers and mothers-to-be in Hong Kong.</p>
       </div>
     </div>
+    <i class="fa fa-caret-down fa-5x"></i>
   </div>
 
   <div id="gallery" class="container-fluid slide">
+    <i class="fa fa-caret-down fa-5x"></i>
     <h1>Sassy's</h1>
     <a href="#/gallery"><div>Gallery</div></a>
     <a href="#/funstuff"><div class="fun">Fun Stuff</div></a>
@@ -106,9 +93,9 @@
   </div>
 
   <div id="photoOfTheDay" class="container-fluid slide"> 
+    <h1>Web Dev Immersive 6 </br> Class of 2015 March</h1>
+    <i class="fa fa-caret-down fa-5x"></i>
   </div>
-
-
 
   <div id="map-canvas" class="">
     <ui-gmap-google-map 
@@ -116,19 +103,19 @@
       zoom    ="map.zoom" 
       options ="options">
     </ui-gmap-google-map>
+    <div id="on-map">
+      Cassie's home
+    </div>
   </div>
 
   <div ng-show="showWeChat" id="modalbackground">
-    <button ng-click="switchWeChat()" class="btn btn-danger">HIDE</button>
-    <!-- <img src="assets/wechatqrcode.png"> -->
+    <button ng-click="switchWeChat()" class="btn btn-warning">HIDE</button>
     <img src="<%=asset_path('wechatqrcode.png')%>">
   </div>
 
   <div ng-show="showSkype" id="modalbackground">
-    <button ng-click="switchSkype()" class="btn btn-danger">HIDE</button>
-    <!-- <img src="assets/skypeqrcode.png"> -->
+    <button ng-click="switchSkype()" class="btn btn-warning">HIDE</button>
     <img src="<%=asset_path('skypeqrcode.png')%>">
-    
   </div>
   
   <div id="footer" class="container-fluid">
@@ -142,17 +129,18 @@
       </br>
       <div class="footline">
         <ul class="social">
-          <li class="icon"><a href="https://github.com/cassiemak/" class="iconicon"><i class="fa fa-github-square fa-2x"></i></a></li>
-          <li class="icon"><a href="http://linkedin.com/in/cassiemak" class="iconicon"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
-          <li class="icon"><a href="http://facebook.com/cassiemak" class="iconicon"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-          <li class="icon"><a href="http://instagram.com/sassycassandra" class="iconicon"><i class="fa fa-instagram fa-2x"></i></a></li>
-          <li class="icon"><a href="https://plus.google.com/+CassandraMak/" class="iconicon"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
-          <li class="icon"><a href="http://www.pinterest.com/cassandramak/" class="iconicon"><i class="fa fa-pinterest-square fa-2x"></i></a></li>
+          <li class="icon"><a href="https://github.com/cassiemak/" target="_blank" class="iconicon"><i class="fa fa-github-square fa-2x"></i></a></li>
+          <li class="icon"><a href="http://linkedin.com/in/cassiemak" target="_blank" class="iconicon"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+          <li class="icon"><a href="https://drive.google.com/open?id=0B3lq2pILdsSodjAwYTRyT3M5Q2c&authuser=0" target="_blank" class="iconicon"><i class="fa fa-file-pdf-o fa-2x"></i></a></li>
+          <li class="icon"><a href="http://facebook.com/cassiemak" target="_blank" class="iconicon"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+          <li class="icon"><a href="http://instagram.com/sassycassandra" target="_blank" class="iconicon"><i class="fa fa-instagram fa-2x"></i></a></li>
+          <li class="icon"><a href="https://plus.google.com/+CassandraMak/" target="_blank" class="iconicon"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+          <li class="icon"><a href="http://www.pinterest.com/cassandramak/" target="_blank" class="iconicon"><i class="fa fa-pinterest-square fa-2x"></i></a></li>
           <li class="icon"><a href="" ng-click="switchWeChat()"  class="iconicon"><i class="fa fa-weixin fa-2x"></i></a></li>
           <li class="icon"><a href="" class="iconicon" ng-click="switchSkype()"><i class="fa fa-skype fa-2x"></i></a></li>
-          <li class="icon"><a href="https://angel.co/cassie-mak" class="iconicon"><i class="fa fa-angellist fa-2x"></i></a></li>
-          <li class="icon"><a href="https://twitter.com/CassieMak" class="iconicon"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-          <li class="icon"><a href="https://www.youtube.com/user/cassiemak" class="iconicon"><i class="fa fa-youtube-square fa-2x"></i></a></li>
+          <li class="icon"><a href="https://angel.co/cassie-mak" target="_blank" class="iconicon"><i class="fa fa-angellist fa-2x"></i></a></li>
+          <li class="icon"><a href="https://twitter.com/CassieMak" target="_blank" class="iconicon"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+          <li class="icon"><a href="https://www.youtube.com/user/cassiemak" target="_blank" class="iconicon"><i class="fa fa-youtube-square fa-2x"></i></a></li>
         </ul>
       </div>
       <div class="footline">
