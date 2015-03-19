@@ -1,6 +1,9 @@
-app.factory('anchorSmoothScroll', ['$scope', '$location', function($scope, $location){
+app.service('anchorSmoothScroll', function(){
     
-    this.scrollTo = function(eID) {
+    var x = {};
+
+    x.scrollTo = function(eID) {
+        console.log("trying", eID);
 
         // This scrolling function 
         // is from http://www.itnewb.com/tutorial/Creating-the-Smooth-Scroll-Effect-with-JavaScript
@@ -53,7 +56,6 @@ app.factory('anchorSmoothScroll', ['$scope', '$location', function($scope, $loca
                 y += node.offsetTop;
             } return y;
         }
-
     };
-    
-}]);
+    return x;
+});

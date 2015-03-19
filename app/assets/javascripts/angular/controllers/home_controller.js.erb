@@ -1,18 +1,23 @@
-app.controller('HomeCtrl', ['$scope','uiGmapGoogleMapApi', function($scope, uiGmapGoogleMapApi){
+app.controller('HomeCtrl', ['$scope','uiGmapGoogleMapApi', 'anchorSmoothScroll', '$location', function($scope, uiGmapGoogleMapApi, anchorSmoothScroll, $location){
 
-  // var $scope.nav = $('#fullbar'),
-  // var posTop = $scope.nav.position().top;
-  // $(window).scroll(function () {
-  //   var y = $(this).scrollTop();
-  //   if (y > posTop) { $nav.addClass('fixed'); }
-  //   else { $nav.removeClass('fixed'); }
-  // });
+  console.log("hello controler at home");
+  
+  $scope.gotoElement = function (eID){
+      // set the location.hash to the id of
+      // the element you wish to scroll to.
+      $location.hash(eID);
+ 
+      // call $anchorScroll()
+      // anchorSmoothScroll.scrollTo(eID);
+      
+  };
 
   console.log("home controller running");
 
   $scope.showWeChat = false;
   $scope.switchWeChat = function() {
     $scope.showWeChat =!$scope.showWeChat;
+    $scope.gotoElement('contactinfo');
     $scope.showSkype = false;
     // add scroll to bottom 
   }
@@ -20,6 +25,7 @@ app.controller('HomeCtrl', ['$scope','uiGmapGoogleMapApi', function($scope, uiGm
   $scope.showSkype = false;
   $scope.switchSkype = function() {
     $scope.showSkype =!$scope.showSkype;
+    $scope.gotoElement('contactinfo');
     $scope.showWeChat = false;
     // add scroll to bottom 
   }

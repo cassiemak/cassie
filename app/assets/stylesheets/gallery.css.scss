@@ -38,7 +38,7 @@
   transform: translateZ(.25px) scale(.75) translateX(10%) translateY(200%) rotate(0deg);
 }
 
-#gallery > i {
+#gallery > a > i {
   position: absolute;
   bottom: 0;
   margin: auto;

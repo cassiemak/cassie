@@ -4,15 +4,15 @@
   <div id="fullbar" class="container-fluid">
     <div class="row">
       <div class="col-xs-11 col-sm-4">
-        <!-- <h1 id="myName">CASSIE MAK</h1> -->
       </div>
       <div class="col-xs-1 col-sm-8 nav navbar" id="menu">
         <ul class="topMenu">
-          <li class="list"><a href="#/" class="menuList">HOME</a></li>
-          <li class="list"><a href="#/" class="menuList">PORTFOLIO</a></li>
-          <li class="list"><a href="#/" class="menuList">ABOUT</a></li>
-          <li class="list"><a href="#/" class="menuList">SASSY'S</a></li>
-          <li class="list"><a href="#/" class="menuList">CONTACT</a></li>
+          <li class="list"><a href="" ng-click="gotoElement('landing')" class="menuList">HOME</a></li>
+          <li class="list"><a href="" ng-click="gotoElement('portfolio')" class="menuList">PORTFOLIO</a></li>
+          <li class="list"><a href="" ng-click="gotoElement('cassie')" class="menuList">ABOUT</a></li>
+          <li class="list"><a href="" ng-click="gotoElement('gallery')" class="menuList">SASSY'S</a></li>
+          <li class="list"><a href="" ng-click="gotoElement('photoOfTheDay')" class="menuList">POTM</a></li>
+          <li class="list"><a href="" ng-click="gotoElement('footer')" class="menuList">CONTACT</a></li>
         </ul>
       </div>
     </div>
@@ -22,11 +22,11 @@
     <div class="row vertical-center">
       <h1>CASSIE MAK</h1>
     </div>
-    <i class="fa fa-caret-down fa-5x"></i>
+    <a href="" ng-click="gotoElement('portfolio')"><i class="fa fa-caret-down fa-5x"></i></a>
   </div>
   
   <div id="portfolio" class="container-fluid slide">
-    <i class="fa fa-caret-down fa-5x"></i>
+    <a href="" ng-click="gotoElement('cassie')"><i class="fa fa-caret-down fa-5x"></i></a>
     <div class="row">
       <div class="text-center portfolios-wrapper">
         <div>
@@ -81,11 +81,11 @@
         <p> Pivoted from a corporate financial career, I am passionate in the technology industry; I have dived into web development with General Assembly - Web Development Immersive where I have learned CSS3, HTML5, Javascript, jQuery, AngularJS etc. In addition to programming, in 2014 I have also founded my first startup - mamahen, the first e-gift registry platform for mothers and mothers-to-be in Hong Kong.</p>
       </div>
     </div>
-    <i class="fa fa-caret-down fa-5x"></i>
+    <a href="" ng-click="gotoElement('gallery')"><i class="fa fa-caret-down fa-5x"></i></a>
   </div>
 
   <div id="gallery" class="container-fluid slide">
-    <i class="fa fa-caret-down fa-5x"></i>
+    <a href="" ng-click="gotoElement('photoOfTheDay')"><i class="fa fa-caret-down fa-5x"></i></a>
     <h1>Sassy's</h1>
     <a href="#/gallery"><div>Gallery</div></a>
     <a href="#/funstuff"><div class="fun">Fun Stuff</div></a>
@@ -94,7 +94,7 @@
 
   <div id="photoOfTheDay" class="container-fluid slide"> 
     <h1>Web Dev Immersive 6 </br> Class of 2015 March</h1>
-    <i class="fa fa-caret-down fa-5x"></i>
+    <a href="" ng-click="gotoElement('footer')" ><i class="fa fa-caret-down fa-5x"></i></a>
   </div>
 
   <div id="map-canvas" class="">
@@ -144,7 +144,7 @@
         </ul>
       </div>
       <div class="footline">
-        <ul class="contactinfo text-center">
+        <ul id="contactinfo">
           <li class="info">
             <i class="fa fa-envelope fa-2x"></i>
             <div class="email"> cassie[dot]mak[at]gmail[dot]com</div>
