@@ -17,7 +17,7 @@ app.controller('HomeCtrl', ['$scope','uiGmapGoogleMapApi', 'anchorSmoothScroll',
   $scope.showWeChat = false;
   $scope.switchWeChat = function() {
     $scope.showWeChat =!$scope.showWeChat;
-    $scope.gotoElement('contactinfo');
+    // $scope.gotoElement('contactinfo');
     $scope.showSkype = false;
     // add scroll to bottom 
   }
@@ -25,7 +25,7 @@ app.controller('HomeCtrl', ['$scope','uiGmapGoogleMapApi', 'anchorSmoothScroll',
   $scope.showSkype = false;
   $scope.switchSkype = function() {
     $scope.showSkype =!$scope.showSkype;
-    $scope.gotoElement('contactinfo');
+    // $scope.gotoElement('contactinfo');
     $scope.showWeChat = false;
     // add scroll to bottom 
   }
